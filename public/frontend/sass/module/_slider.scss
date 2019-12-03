@@ -1,0 +1,36 @@
+.carousel {
+  // height: 388px;
+  border: 1px solid $gray;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: auto;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1024px) {
+  .carousel {
+    // height: 325px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .carousel {
+    height: auto;
+    border: 1px solid $gray;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel {
+    height: auto;
+    border: 1px solid $gray;
+    overflow: hidden;
+    position: relative;
+  }
+}

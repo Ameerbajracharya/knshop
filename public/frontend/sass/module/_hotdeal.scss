@@ -1,0 +1,58 @@
+.hotdeal {
+  &--image {
+    background-color: $gray;
+    max-width: 100%;
+    height: 333px;
+    border: 1px solid $gray;
+  }
+  &--heading {
+    font-weight: bold;
+    color: $red;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .hotdeal {
+    &--image {
+      background-color: $gray;
+      max-width: 100%;
+      height: auto;
+      border: 1px solid $gray;
+    }
+    &--heading {
+      font-weight: bold;
+      color: $red;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hotdeal {
+    &--image {
+      background-color: $gray;
+      width: 100%;
+      height: auto;
+      border: 1px solid $gray;
+    }
+    &--heading {
+      font-weight: bold;
+      color: $red;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .hotdeal {
+    &--image {
+      background-color: $gray;
+      width: 100%;
+      height: auto;
+      border: 1px solid $gray;
+    }
+    &--heading {
+      font-weight: bold;
+      color: $red;
+    }
+  }
+}

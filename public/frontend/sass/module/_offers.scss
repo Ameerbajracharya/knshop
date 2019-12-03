@@ -1,0 +1,130 @@
+  .productbox {
+    width: 18.69%;
+    background-color: #fff;
+    padding: 15px;
+    margin: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    border: $border;
+    img {
+      width: 100%;
+      border: $border;
+    }
+  }
+
+@media (max-width: 1400px) {
+  .productbox {
+    width: 18.69%;
+    background-color: #fff;
+    padding: 15px;
+    margin: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    border: $border;
+    img {
+      width: 100%;
+      border: $border;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .productbox {
+    width: 30%;
+    float: left;
+    img {
+      width: 100%;
+    }
+  }
+  .firstproduct {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .productbox {
+    width: 100%;
+    padding: 20px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.firstproduct {
+  margin-left: 15px;
+}
+
+.producttitle {
+  font-weight: bold;
+  padding: 5px 0 5px 0;
+}
+
+.productprice {
+  border-top: 1px solid #dadada;
+  padding-top: 5px;
+}
+
+.pricetext {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.btn {
+  transition: 0.5s;
+  background: $orange;
+  color: white;
+  &:hover {
+    color: white;
+  }
+}
+
+// Shining
+.productbox.two {
+  background-repeat: no-repeat;
+  background-position: -350px -350px, 0 0;
+  background-image: -webkit-linear-gradient( top left,
+  rgba(255, 255, 255, 0.2) 0%,
+  rgba(255, 255, 255, 0.2) 37%,
+  rgba(255, 255, 255, 0.8) 45%,
+  rgba(255, 255, 255, 0.0) 50%);
+  background-image: -moz-linear-gradient( 0 0,
+  rgba(255, 255, 255, 0.2) 0%,
+  rgba(255, 255, 255, 0.2) 37%,
+  rgba(255, 255, 255, 0.8) 45%,
+  rgba(255, 255, 255, 0.0) 50%);
+  background-image: -o-linear-gradient( 0 0,
+  rgba(255, 255, 255, 0.2) 0%,
+  rgba(255, 255, 255, 0.2) 37%,
+  rgba(255, 255, 255, 0.8) 45%,
+  rgba(255, 255, 255, 0.0) 50%);
+  background-image: linear-gradient( 0 0,
+  rgba(255, 255, 255, 0.2) 0%,
+  rgba(255, 255, 255, 0.2) 37%,
+  rgba(255, 255, 255, 0.8) 45%,
+  rgba(255, 255, 255, 0.0) 50%);
+
+  -moz-background-size: 250% 250%, 100% 100%;
+  background-size: 250% 250%, 100% 100%;
+
+  -webkit-transition: background-position 0s ease;
+  -moz-transition: background-position 0s ease;
+  -o-transition: background-position 0s ease;
+  transition: background-position 0s ease;
+}
+
+.productbox.two:hover {
+  cursor: pointer;
+  background-position: 0 0, 0 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  transition-duration: 1s;
+}
+

@@ -1,0 +1,1172 @@
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(http://fonts.googleapis.com/css?family=Gudea);
+/* line 2, ../sass/_base/_base.scss */
+body {
+  height: 100vh !important;
+}
+a {
+  color: white;
+  transition: 0.3s;
+}
+/* line 5, ../sass/_base/_base.scss */
+a:hover {
+  color: #f46600;
+  text-decoration: none;
+}
+/* line 9, ../sass/_base/_base.scss */
+a:active {
+  color: #f46600;
+  background-color: none;
+}
+/* line 13, ../sass/_base/_base.scss */
+a:focus {
+  color: #f46600;
+  background-color: none;
+}
+
+/* line 19, ../sass/_base/_base.scss */
+.section-padding {
+  padding: 40px 0;
+}
+
+/* line 1, ../sass/module/_nav.scss */
+.md--navbar {
+  background-color: #683084;
+  border-color: #683084;
+  border-radius: 0px;
+  color: white;
+}
+
+/* line 8, ../sass/module/_nav.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* line 13, ../sass/module/_nav.scss */
+.navbar-default .navbar-nav > li > a:hover {
+  color: #cccccc;
+}
+
+/* line 17, ../sass/module/_nav.scss */
+.navbar-header {
+  margin-top: 5px;
+  padding-right: 5px;
+}
+
+/* line 22, ../sass/module/_nav.scss */
+.md--form {
+  margin: 9px;
+}
+
+/* line 26, ../sass/module/_nav.scss */
+.md--fa {
+  font-size: 1.3em;
+}
+
+/* line 30, ../sass/module/_nav.scss */
+.search-bar {
+  background-color: #ffffff;
+  display: initial;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* line 37, ../sass/module/_nav.scss */
+.search-icon {
+  color: #000000;
+}
+
+/* line 41, ../sass/module/_nav.scss */
+i:hover {
+  cursor: pointer;
+}
+
+/* line 45, ../sass/module/_nav.scss */
+.search-icon > input {
+  border: none;
+  margin: 5px;
+  width: 600px;
+}
+/* line 49, ../sass/module/_nav.scss */
+.search-icon > input:focus {
+  outline: none;
+}
+
+/* line 54, ../sass/module/_nav.scss */
+.dropdown-menu > li > a:hover {
+  border-left: 5px solid #f46600;
+  transition: 0.3s;
+}
+
+@media (max-width: 1200px) {
+  /* line 59, ../sass/module/_nav.scss */
+  .search-icon > input {
+    width: 450px;
+  }
+}
+@media (max-width: 1000px) {
+  /* line 64, ../sass/module/_nav.scss */
+  .search-icon > input {
+    width: 200px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 70, ../sass/module/_nav.scss */
+  .form-center {
+    margin: 0px auto;
+    display: flex;
+  }
+
+  /* line 74, ../sass/module/_nav.scss */
+  .form-control {
+    display: inline;
+  }
+
+  /* line 77, ../sass/module/_nav.scss */
+  .md--form {
+    webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /* line 81, ../sass/module/_nav.scss */
+  .navbar-form {
+    margin: 0px auto;
+    border: none;
+  }
+
+  /* line 85, ../sass/module/_nav.scss */
+  .together {
+    display: flex;
+    margin: 0px 25px;
+  }
+
+  /* line 89, ../sass/module/_nav.scss */
+  .together > .nav {
+    flex: 1;
+  }
+
+  /* line 92, ../sass/module/_nav.scss */
+  .navbar-header {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /* line 96, ../sass/module/_nav.scss */
+  .navbar-header > img {
+    margin: 10px;
+  }
+
+  /* line 99, ../sass/module/_nav.scss */
+  .navbar-collapse > .nav {
+    display: flex;
+  }
+
+  /* line 102, ../sass/module/_nav.scss */
+  .navbar-collapse > .nav > li {
+    margin: 0px auto;
+  }
+
+  /* line 105, ../sass/module/_nav.scss */
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+}
+@media (max-width: 500px) {
+  /* line 111, ../sass/module/_nav.scss */
+  .form-center {
+    flex-direction: column;
+  }
+
+  /* line 114, ../sass/module/_nav.scss */
+  .form-center > .nav {
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  /* line 118, ../sass/module/_nav.scss */
+  .navbar-collapse > .nav {
+    flex-direction: column;
+  }
+}
+@media (max-width: 433px) {
+  /* line 124, ../sass/module/_nav.scss */
+  .form-group > .btn-default {
+    margin: 0px auto;
+    display: block;
+    margin-top: 5px;
+  }
+
+  /* line 129, ../sass/module/_nav.scss */
+  .form-group > .md--form {
+    margin: 0px auto;
+    display: block;
+  }
+
+  /* line 133, ../sass/module/_nav.scss */
+  .navbar-form {
+    padding: 20px 0px;
+  }
+
+  /* line 136, ../sass/module/_nav.scss */
+  .search-icon > input {
+    border: none;
+    padding: 0px;
+    margin-left: 0px;
+  }
+
+  /* line 141, ../sass/module/_nav.scss */
+  .together {
+    display: flex;
+    margin: 0px 0px;
+  }
+}
+@media (max-width: 300px) {
+  /* line 147, ../sass/module/_nav.scss */
+  .search-icon > input {
+    width: 120px;
+  }
+}
+/* line 1, ../sass/module/_slider.scss */
+.carousel {
+  border: 1px solid #cccccc;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  /* line 8, ../sass/module/_slider.scss */
+  .carousel {
+    height: auto;
+    overflow: hidden;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 15, ../sass/module/_slider.scss */
+  .carousel {
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 22, ../sass/module/_slider.scss */
+  .carousel {
+    height: auto;
+    border: 1px solid #cccccc;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 30, ../sass/module/_slider.scss */
+  .carousel {
+    height: auto;
+    border: 1px solid #cccccc;
+    overflow: hidden;
+    position: relative;
+  }
+}
+/* line 2, ../sass/module/_hotdeal.scss */
+.hotdeal--image {
+  background-color: #cccccc;
+  max-width: 100%;
+  height: 333px;
+  border: 1px solid #cccccc;
+}
+/* line 8, ../sass/module/_hotdeal.scss */
+.hotdeal--heading {
+  font-weight: bold;
+  color: #640000;
+}
+
+@media only screen and (max-width: 500px) {
+  /* line 17, ../sass/module/_hotdeal.scss */
+  .hotdeal--image {
+    background-color: #cccccc;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #cccccc;
+  }
+  /* line 23, ../sass/module/_hotdeal.scss */
+  .hotdeal--heading {
+    font-weight: bold;
+    color: #640000;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 32, ../sass/module/_hotdeal.scss */
+  .hotdeal--image {
+    background-color: #cccccc;
+    width: 100%;
+    height: auto;
+    border: 1px solid #cccccc;
+  }
+  /* line 38, ../sass/module/_hotdeal.scss */
+  .hotdeal--heading {
+    font-weight: bold;
+    color: #640000;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /* line 47, ../sass/module/_hotdeal.scss */
+  .hotdeal--image {
+    background-color: #cccccc;
+    width: 100%;
+    height: auto;
+    border: 1px solid #cccccc;
+  }
+  /* line 53, ../sass/module/_hotdeal.scss */
+  .hotdeal--heading {
+    font-weight: bold;
+    color: #640000;
+  }
+}
+/* line 1, ../sass/module/_offers.scss */
+.productbox {
+  width: 18.69%;
+  background-color: #fff;
+  padding: 15px;
+  margin: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
+  border: 1px solid #efefef;
+}
+/* line 12, ../sass/module/_offers.scss */
+.productbox img {
+  width: 100%;
+  border: 1px solid #efefef;
+}
+
+@media (max-width: 1400px) {
+  /* line 19, ../sass/module/_offers.scss */
+  .productbox {
+    width: 18.69%;
+    background-color: #fff;
+    padding: 15px;
+    margin: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    border: 1px solid #efefef;
+  }
+  /* line 30, ../sass/module/_offers.scss */
+  .productbox img {
+    width: 100%;
+    border: 1px solid #efefef;
+  }
+}
+@media (max-width: 768px) {
+  /* line 38, ../sass/module/_offers.scss */
+  .productbox {
+    width: 30%;
+    float: left;
+  }
+  /* line 41, ../sass/module/_offers.scss */
+  .productbox img {
+    width: 100%;
+  }
+
+  /* line 45, ../sass/module/_offers.scss */
+  .firstproduct {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 500px) {
+  /* line 51, ../sass/module/_offers.scss */
+  .productbox {
+    width: 100%;
+    padding: 20px;
+  }
+  /* line 54, ../sass/module/_offers.scss */
+  .productbox img {
+    width: 100%;
+  }
+}
+/* line 60, ../sass/module/_offers.scss */
+.firstproduct {
+  margin-left: 15px;
+}
+
+/* line 64, ../sass/module/_offers.scss */
+.producttitle {
+  font-weight: bold;
+  padding: 5px 0 5px 0;
+}
+
+/* line 69, ../sass/module/_offers.scss */
+.productprice {
+  border-top: 1px solid #dadada;
+  padding-top: 5px;
+}
+
+/* line 74, ../sass/module/_offers.scss */
+.pricetext {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+/* line 79, ../sass/module/_offers.scss */
+.btn {
+  transition: 0.5s;
+  background: #f46600;
+  color: white;
+}
+/* line 83, ../sass/module/_offers.scss */
+.btn:hover {
+  color: white;
+}
+
+/* line 89, ../sass/module/_offers.scss */
+.productbox.two {
+  background-repeat: no-repeat;
+  background-position: -350px -350px, 0 0;
+  background-image: -webkit-linear-gradient(top left, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 37%, rgba(255, 255, 255, 0.8) 45%, rgba(255, 255, 255, 0) 50%);
+  background-image: -moz-linear-gradient(0 0, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 37%, rgba(255, 255, 255, 0.8) 45%, rgba(255, 255, 255, 0) 50%);
+  background-image: -o-linear-gradient(0 0, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 37%, rgba(255, 255, 255, 0.8) 45%, rgba(255, 255, 255, 0) 50%);
+  background-image: linear-gradient(0 0, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 37%, rgba(255, 255, 255, 0.8) 45%, rgba(255, 255, 255, 0) 50%);
+  -moz-background-size: 250% 250%, 100% 100%;
+  background-size: 250% 250%, 100% 100%;
+  -webkit-transition: background-position 0s ease;
+  -moz-transition: background-position 0s ease;
+  -o-transition: background-position 0s ease;
+  transition: background-position 0s ease;
+}
+
+/* line 122, ../sass/module/_offers.scss */
+.productbox.two:hover {
+  cursor: pointer;
+  background-position: 0 0, 0 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+/* line 2, ../sass/module/_checkout.scss */
+.checkout--step {
+  padding: 40px;
+  margin-bottom: 20px;
+  background-color: #e9e9e9;
+  color: #222;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 2, 34, 0.3);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 2, 34, 0.3);
+  box-shadow: 0px 5px 5px 0px rgba(0, 2, 34, 0.3);
+}
+/* line 10, ../sass/module/_checkout.scss */
+.checkout--step h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* line 1, ../sass/module/_product.scss */
+.product {
+  margin: 20px;
+}
+
+/* line 5, ../sass/module/_product.scss */
+.product img:hover {
+  border: 1px solid #e9e9e9;
+}
+
+/* line 9, ../sass/module/_product.scss */
+.share_btn-twitter {
+  background-color: #31a7df;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* line 16, ../sass/module/_product.scss */
+.share_btn-twitter:hover {
+  transition: 0.5s;
+  background: #fff;
+  color: #31a7df;
+  box-shadow: 0px 5px 5px #888888;
+}
+
+/* line 23, ../sass/module/_product.scss */
+.share_btn-facebook {
+  background-color: #445fa2;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* line 30, ../sass/module/_product.scss */
+.share_btn-facebook:hover {
+  transition: 0.5s;
+  background: #fff;
+  color: #445fa2;
+  box-shadow: 0px 5px 5px #888888;
+}
+
+/* line 37, ../sass/module/_product.scss */
+.share_btn-googleplus {
+  background-color: #e45034;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* line 44, ../sass/module/_product.scss */
+.share_btn-googleplus:hover {
+  transition: 0.5s;
+  background: #fff;
+  color: #e45034;
+  box-shadow: 0px 5px 5px #888888;
+}
+
+/* line 51, ../sass/module/_product.scss */
+.share-to-friend {
+  padding-top: 10px;
+}
+
+/* line 55, ../sass/module/_product.scss */
+.share-to-friend a {
+  color: #45b549;
+}
+
+/* line 59, ../sass/module/_product.scss */
+.quantity_buy {
+  background: #f6f6f6;
+  padding: 20px;
+}
+
+/* line 64, ../sass/module/_product.scss */
+.cart-btn,
+.buy-btn {
+  background: #f46600;
+  color: #fff;
+}
+
+/* line 70, ../sass/module/_product.scss */
+.order-on-phone {
+  background: #f6f6f6;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+/* line 76, ../sass/module/_product.scss */
+.order-on-phone h3 {
+  color: #45b549;
+}
+
+/* line 80, ../sass/module/_product.scss */
+.order-on-phone p {
+  text-align: justify;
+}
+
+/* line 86, ../sass/module/_product.scss */
+.magnify {
+  position: relative;
+  cursor: none;
+}
+
+/* line 91, ../sass/module/_product.scss */
+.magnify-large {
+  position: absolute;
+  display: none;
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+@media (max-width: 700px) {
+  /* line 107, ../sass/module/_product.scss */
+  .sub_img {
+    margin: 20px;
+  }
+
+  /* line 110, ../sass/module/_product.scss */
+  .sub_img img {
+    width: 50px;
+  }
+}
+/* line 1, ../sass/module/_register.scss */
+.colorgraph {
+  height: 5px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 10px;
+  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+
+/* line 11, ../sass/module/_register.scss */
+.register-form {
+  padding: 10px;
+}
+
+/* line 3, ../sass/module/_footer.scss */
+.bottom-footer {
+  background-color: #683084;
+  color: #cccccc;
+  padding-top: 40px;
+  padding-right: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+  /*    border-top-width: 4px;
+    border-top-style: solid;
+    border-top-color: #003;*/
+}
+
+/* line 16, ../sass/module/_footer.scss */
+.title-widget {
+  color: #f46600;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 25px;
+  margin-left: 0;
+  padding-left: 28px;
+}
+
+/* line 31, ../sass/module/_footer.scss */
+.title-widget::before {
+  background-color: #ea5644;
+  content: "";
+  height: 22px;
+  left: 0px;
+  position: absolute;
+  top: -2px;
+  width: 5px;
+}
+
+/* line 41, ../sass/module/_footer.scss */
+.widget_nav_menu ul {
+  list-style: outside none none;
+  padding-left: 0;
+}
+
+/* line 46, ../sass/module/_footer.scss */
+.widget_archive ul li {
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  top: 7px;
+  width: 3px;
+}
+
+/* line 56, ../sass/module/_footer.scss */
+.widget_nav_menu ul li {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  position: relative;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 7px;
+  padding-bottom: 7px;
+  width: 95%;
+}
+
+/* line 68, ../sass/module/_footer.scss */
+.title-median {
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+/* line 77, ../sass/module/_footer.scss */
+.footerp p {
+  font-family: 'Gudea', sans-serif;
+}
+
+/* line 87, ../sass/module/_footer.scss */
+#social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+/* 
+    Only Needed in Multi-Coloured Variation 
+                                               */
+/* line 102, ../sass/module/_footer.scss */
+.social-fb:hover {
+  color: #f46600;
+}
+
+/* line 107, ../sass/module/_footer.scss */
+.social-tw:hover {
+  color: #f46600;
+}
+
+/* line 112, ../sass/module/_footer.scss */
+.social-gp:hover {
+  color: #f46600;
+}
+
+/* line 117, ../sass/module/_footer.scss */
+.social-em:hover {
+  color: #f46600;
+}
+
+/* line 122, ../sass/module/_footer.scss */
+.nomargin {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 127, ../sass/module/_footer.scss */
+.footer-bottom {
+  background-color: #43165b;
+  min-height: 30px;
+  width: 100%;
+}
+
+/* line 133, ../sass/module/_footer.scss */
+.copyright {
+  color: #fff;
+  line-height: 30px;
+  min-height: 30px;
+  padding: 7px 0;
+}
+
+/* line 140, ../sass/module/_footer.scss */
+.design {
+  color: #fff;
+  line-height: 30px;
+  min-height: 30px;
+  padding: 7px 0;
+  text-align: right;
+}
+
+/* line 148, ../sass/module/_footer.scss */
+.design a {
+  color: #fff;
+}
+
+/* line 152, ../sass/module/_footer.scss */
+.nomargin {
+  float: right;
+  bottom: 0px;
+}
+
+/* footer social icons */
+/* line 160, ../sass/module/_footer.scss */
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+/* line 167, ../sass/module/_footer.scss */
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+/* footer social icons */
+/* line 175, ../sass/module/_footer.scss */
+.social-network a.icoRss:hover {
+  background-color: #F56505;
+}
+
+/* line 179, ../sass/module/_footer.scss */
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+/* line 183, ../sass/module/_footer.scss */
+.social-network a.icoTwitter:hover {
+  background-color: #33ccff;
+}
+
+/* line 187, ../sass/module/_footer.scss */
+.social-network a.icoGoogle:hover {
+  background-color: #BD3518;
+}
+
+/* line 191, ../sass/module/_footer.scss */
+.social-network a.icoVimeo:hover {
+  background-color: #0590B8;
+}
+
+/* line 195, ../sass/module/_footer.scss */
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+/* line 199, ../sass/module/_footer.scss */
+.social-network a.icoRss:hover i,
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i,
+.social-network a.icoVimeo:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+/* line 208, ../sass/module/_footer.scss */
+a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+/* line 213, ../sass/module/_footer.scss */
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+/* line 226, ../sass/module/_footer.scss */
+.social-circle li i {
+  margin: 0;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* line 232, ../sass/module/_footer.scss */
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* line 245, ../sass/module/_footer.scss */
+.social-circle i {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+/* line 254, ../sass/module/_footer.scss */
+.social-circle a {
+  border: 1px solid #cccccc;
+}
+
+/* line 1, ../sass/module/_categoriesmenu.scss */
+.CategoriesMenu {
+  background-color: #683084;
+  height: 50px;
+  padding-top: 13px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 7, ../sass/module/_categoriesmenu.scss */
+.CategoriesMenu .center {
+  margin-left: 30%;
+}
+/* line 10, ../sass/module/_categoriesmenu.scss */
+.CategoriesMenu-Text {
+  color: #fff;
+  margin-left: 70px;
+  transition: 0.5s;
+  cursor: hand;
+  font-size: 1.2em;
+}
+/* line 16, ../sass/module/_categoriesmenu.scss */
+.CategoriesMenu-Text:hover {
+  color: #f46600;
+}
+
+/* line 23, ../sass/module/_categoriesmenu.scss */
+.well {
+  margin-top: 10px;
+  color: #683084;
+}
+/* line 26, ../sass/module/_categoriesmenu.scss */
+.well label {
+  padding-left: 10px;
+  cursor: pointer;
+}
+/* line 30, ../sass/module/_categoriesmenu.scss */
+.well a {
+  color: #3d3d3d;
+}
+/* line 33, ../sass/module/_categoriesmenu.scss */
+.well a:hover {
+  border-left: 5px solid #f46600;
+  transition: 0.3s;
+}
+
+/* line 1, ../sass/module/_mainItems.scss */
+.mainItems {
+  margin-bottom: 20px;
+}
+
+/* line 6, ../sass/module/_mainItems.scss */
+.pagination--items {
+  margin: 0px auto;
+}
+
+/* line 10, ../sass/module/_mainItems.scss */
+.itembox {
+  width: 23%;
+  background-color: #fff;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
+  border: 1px solid #efefef;
+  float: left;
+}
+/* line 21, ../sass/module/_mainItems.scss */
+.itembox img {
+  width: 100%;
+  border: 1px solid #efefef;
+}
+
+@media (max-width: 1400px) {
+  /* line 29, ../sass/module/_mainItems.scss */
+  .itembox {
+    width: 23%;
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    border: 1px solid #efefef;
+    float: left;
+  }
+  /* line 40, ../sass/module/_mainItems.scss */
+  .itembox img {
+    width: 100%;
+    border: 1px solid #efefef;
+  }
+}
+@media (max-width: 768px) {
+  /* line 50, ../sass/module/_mainItems.scss */
+  .itembox {
+    width: 20.5%;
+    background-color: #fff;
+    padding: 15px;
+    margin: 5px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    border: 1px solid #efefef;
+    float: left;
+  }
+  /* line 61, ../sass/module/_mainItems.scss */
+  .itembox img {
+    width: 100%;
+    border: 1px solid #efefef;
+  }
+}
+@media (max-width: 375px) {
+  /* line 71, ../sass/module/_mainItems.scss */
+  .mainItems {
+    width: 200px;
+  }
+
+  /* line 74, ../sass/module/_mainItems.scss */
+  .itembox {
+    width: 100%;
+    float: left;
+  }
+  /* line 77, ../sass/module/_mainItems.scss */
+  .itembox img {
+    width: 100%;
+    border: 1px solid #efefef;
+  }
+}
+@media (max-width: 500px) {
+  /* line 50, ../sass/module/_mainItems.scss */
+  /* line 87, ../sass/module/_mainItems.scss */
+  .itembox {
+    width: 70%;
+    background-color: #fff;
+    padding: 15px;
+    margin: 5px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    border: 1px solid #efefef;
+  }
+}
+/* line 1, ../sass/module/_tabandcontents.scss */
+a {
+  color: #f46600;
+}
+
+/* line 1, ../sass/module/_login.scss */
+#login-dp {
+  width: 300px;
+  padding: 20px;
+  color: #683084;
+}
+
+/* line 7, ../sass/module/_login.scss */
+#login-dp {
+  min-width: 250px;
+  padding: 14px 14px 0;
+  overflow: hidden;
+  background-color: #efefef;
+}
+
+/* line 14, ../sass/module/_login.scss */
+#login-dp .help-block {
+  font-size: 12px;
+}
+
+/* line 17, ../sass/module/_login.scss */
+#login-dp .bottom {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-top: 1px solid #ddd;
+  clear: both;
+  padding: 14px;
+}
+
+/* line 23, ../sass/module/_login.scss */
+#login-dp .social-buttons {
+  margin: 12px 0;
+}
+
+/* line 26, ../sass/module/_login.scss */
+#login-dp .social-buttons a {
+  width: 49%;
+}
+
+/* line 29, ../sass/module/_login.scss */
+#login-dp .form-group {
+  margin-bottom: 10px;
+}
+
+/* line 33, ../sass/module/_login.scss */
+.btn-signin:hover, .btn-register:hover {
+  background-color: #683084;
+}
+
+/* line 37, ../sass/module/_login.scss */
+.btn-fb {
+  color: #fff;
+  background-color: #3b5998;
+}
+
+/* line 41, ../sass/module/_login.scss */
+.btn-fb:hover {
+  color: #fff;
+  background-color: #496ebc;
+}
+
+/* line 45, ../sass/module/_login.scss */
+.btn-tw {
+  color: #fff;
+  background-color: #55acee;
+}
+
+/* line 49, ../sass/module/_login.scss */
+.btn-tw:hover {
+  color: #fff;
+  background-color: #59b5fa;
+}
+
+@media (max-width: 768px) {
+  /* line 55, ../sass/module/_login.scss */
+  #login-dp {
+    background-color: inherit;
+    color: #fff;
+  }
+
+  /* line 59, ../sass/module/_login.scss */
+  #login-dp .bottom {
+    background-color: inherit;
+    border-top: 0 none;
+  }
+}
+/* Style the tab */
+/* line 2, ../sass/module/_adminform.scss */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 20%;
+  padding: 20px 0;
+}
+
+/* Style the buttons inside the tab */
+/* line 11, ../sass/module/_adminform.scss */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+/* line 26, ../sass/module/_adminform.scss */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+/* line 31, ../sass/module/_adminform.scss */
+.tab button.active {
+  background-color: #ff9900;
+  color: #fff;
+}
+
+/* Style the tab content */
+/* line 37, ../sass/module/_adminform.scss */
+.tabcontent {
+  float: left;
+  padding: 20px 0;
+  width: 80%;
+  border-left: none;
+  border: 1px solid #ccc;
+}
+
+/* line 2, ../sass/module/_accountDashboard.scss */
+.accountDashboard--item {
+  padding: 20px;
+  background-color: #ffcc;
+  border-radius: 20px;
+}

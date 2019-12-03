@@ -1,0 +1,21 @@
+
+a {
+  color: white;
+  transition: 0.3s;
+  &:hover {
+    color: $orange;
+    text-decoration: none;
+  }
+  &:active{
+  	color: $orange;
+  	background-color: none;
+  }
+  &:focus{
+  	color: $orange;
+  	background-color: none;
+  }
+}
+
+.section-padding{
+  padding: 40px 0;
+}

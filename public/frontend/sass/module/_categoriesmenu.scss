@@ -1,0 +1,38 @@
+.CategoriesMenu{
+	background-color: $kitecolor;                                                                                                         
+	height: 50px;
+	padding-top: 13px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	.center{
+		margin-left: 30%;
+	}
+	&-Text{
+		color: #fff;
+		margin-left: 70px;
+		transition: 0.5s;
+		cursor: hand;
+		font-size: 1.2em;
+		&:hover{
+			color: $orange;
+		}
+	}
+}
+
+// Sidebar 
+.well{
+	margin-top: 10px;
+	color: $kitecolor;
+	label{
+		padding-left: 10px;
+		cursor: pointer;
+	}
+	a{
+		color: $darkgray;
+	}
+	a:hover{
+		border-left: 5px solid $orange;
+		transition: 0.3s;
+	}
+}
+
